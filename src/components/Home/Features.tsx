@@ -75,33 +75,33 @@ export default function Features() {
 
 const data = [
   {
-    title: 'Track Expenses',
+    title: 'Smart Route Search',
     description:
-      'Keep a detailed record of every expense to understand where your money is going.',
+      'Find the perfect route with our intelligent search system that considers your preferences.',
     bgColor: 'bg-sky-400',
   },
   {
-    title: 'Multiple Ledgers',
+    title: 'Favorite Trips',
     description:
-      'Organize your finances with separate ledgers for different accounts or financial goals.',
+      'Save and organize your favorite routes for quick access and future planning.',
     bgColor: 'bg-violet-400',
   },
   {
-    title: 'Convert Currency',
+    title: 'Multi-lang',
     description:
-      'Seamlessly manage your finances across multiple currencies without any hassle.',
+      'Access the app in multiple languages, making it perfect for international travelers.',
     bgColor: 'bg-teal-400',
   },
   {
-    title: 'Daily Reminder',
+    title: 'Service Msg',
     description:
-      'Stay on top of your finances with helpful daily reminders to log expenses and income.',
+      'Stay informed with personalized alerts about your routes, weather conditions, and travel updates.',
     bgColor: 'bg-amber-400',
   },
   {
     title: 'Dark Mode',
     description:
-      'Switch to dark mode for a sleek, comfortable viewing experience, day or night.',
+      'Switch between light and dark modes for comfortable viewing in any environment.',
     bgColor: 'bg-stone-400',
   },
 ];
