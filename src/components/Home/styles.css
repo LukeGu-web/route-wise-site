@@ -1,0 +1,133 @@
+.features-wrapper {
+  perspective: 300px;
+}
+
+.features {
+  width: 300px;
+}
+
+/******************************** breath animation ********************************/
+.breath-header {
+  width: 300px;
+  height: 75px;
+}
+
+.breath-text-hover {
+  width: 0;
+  height: 75px;
+  border-right: 4px solid #a3e635;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.dark .breath-text-hover {
+  border-right-color: #43ff85;
+}
+.breath-header:hover .breath-text-hover {
+  width: 100%;
+  color: #a3e635;
+  box-shadow: 0 0 80px #a3e635;
+  text-shadow: 0 0 24px #a3e635;
+  animation: text-breath-effect 2s linear infinite;
+  animation-delay: 0.3s;
+}
+
+@keyframes text-breath-effect {
+  0% {
+    box-shadow: 0 0 80px #a3e635;
+    text-shadow: 0 0 24px #a3e635;
+  }
+  50% {
+    box-shadow: 0 0 30px #a3e635;
+    text-shadow: 0 0 12px #a3e635;
+  }
+  100% {
+    box-shadow: 0 0 80px #a3e635;
+    text-shadow: 0 0 24px #a3e635;
+  }
+}
+
+.dark .breath-header:hover .breath-text-hover {
+  color: #43ff85;
+  box-shadow: 0 0 80px #43ff85;
+  text-shadow: 0 0 24px #43ff85;
+  animation: text-breath-dark 2s linear infinite;
+}
+@keyframes text-breath-dark {
+  0% {
+    box-shadow: 0 0 80px #43ff85;
+    text-shadow: 0 0 24px #43ff85;
+  }
+  50% {
+    box-shadow: 0 0 30px #43ff85;
+    text-shadow: 0 0 12px #43ff85;
+  }
+  100% {
+    box-shadow: 0 0 80px #43ff85;
+    text-shadow: 0 0 24px #43ff85;
+  }
+}
+
+/******************************** spotlight animation ********************************/
+
+.spotlight {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: relative;
+}
+.spotlight:before {
+  width: inherit;
+  height: inherit;
+  content: attr(data-cont);
+  color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    #4158d0 0%,
+    #c850c0 30%,
+    #ffcc70 66%,
+    #56e28d 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: spotlight 8s linear infinite;
+}
+@keyframes spotlight {
+  0% {
+    clip-path: ellipse(32px 32px at 0 50%);
+  }
+  50% {
+    clip-path: ellipse(32px 32px at 100% 50%);
+  }
+  100% {
+    clip-path: ellipse(32px 32px at 0 50%);
+  }
+}
+
+/* responsive: screen > sm */
+@media only screen and (min-width: 640px) {
+  .breath-header {
+    width: 600px;
+    height: 145px;
+  }
+  .breath-text-hover {
+    height: 145px;
+  }
+  .spotlight {
+    font-size: 40px;
+    font-weight: 900;
+  }
+}
+
+/* responsive: screen > md */
+@media only screen and (min-width: 768px) {
+  .features-wrapper {
+    perspective: 500px;
+  }
+  .features {
+    width: 500px;
+  }
+}
