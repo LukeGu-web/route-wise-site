@@ -72,7 +72,7 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className='text-xl font-semibold'>3. Data Storage and Security</h2>
           <p>
-            Your privacy is our top priority. Here's how we handle your data:
+            Your privacy is our top priority. Here&apos;s how we handle your data:
           </p>
           <ul>
             <li>
@@ -82,7 +82,7 @@ export default function PrivacyPolicy() {
               <strong>No Server Storage:</strong> We do not store any personal information on our servers
             </li>
             <li>
-              <strong>Data Protection:</strong> Your local data is protected by your device's built-in security features
+              <strong>Data Protection:</strong> Your local data is protected by your device&apos;s built-in security features
             </li>
           </ul>
         </section>
