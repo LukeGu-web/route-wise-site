@@ -7,7 +7,7 @@ export default function Footer() {
         {/* <Link className='text-stone-700 dark:text-white' href='/about'>
           About
         </Link> */}
-        <Link href='/terms-and-conditions'>Terms & Conditions</Link>
+        {/* <Link href='/terms-and-conditions'>Terms & Conditions</Link> */}
         <Link href='/privacy-policy'>Privacy Policy</Link>
         <Link href='/support'>Contact Us</Link>
       </div>
