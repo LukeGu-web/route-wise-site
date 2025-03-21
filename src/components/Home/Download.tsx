@@ -13,7 +13,7 @@ export default function Download() {
     >
       <Link
         className='flex flex-col items-center justify-center gap-4'
-        href='https://apps.apple.com/us/app/get-rich/id6736561045'
+        href='https://apps.apple.com/app/route-wise/id6743143103'
       >
         <p className='spotlight' data-cont='Today is the day'>
           Today is the day
